@@ -17,6 +17,7 @@ export const Route = createFileRoute("/")({
 
 const FB = "https://www.facebook.com/manicaretti.paris/?locale=fr_FR";
 const IG = "https://www.instagram.com/manicarettibio/";
+const TA = "https://www.tripadvisor.fr/Restaurant_Review-g187147-d12433951-Reviews-Manicaretti-Paris_Ile_de_France.html";
 const TEL = "+33951775730";
 const MAPS = "https://maps.google.com/?q=60+Rue+de+Paradis,+75010+Paris";
 
@@ -213,6 +214,16 @@ function Home() {
               <a href={IG} target="_blank" rel="noreferrer" aria-label="Instagram" className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-border hover:bg-muted transition">
                 <Instagram className="h-5 w-5" />
               </a>
+              <a href={TA} target="_blank" rel="noreferrer" aria-label="TripAdvisor" className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-border hover:bg-muted transition text-muted-foreground hover:text-foreground">
+                <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <circle cx="7" cy="12" r="4" />
+                  <circle cx="7" cy="12" r="1.2" fill="currentColor" stroke="none" />
+                  <circle cx="17" cy="12" r="4" />
+                  <circle cx="17" cy="12" r="1.2" fill="currentColor" stroke="none" />
+                  <path d="M10 8.5c1 .5 3 .5 4 0" />
+                  <path d="M12 11.5L11.2 13h1.6z" fill="currentColor" stroke="none" />
+                </svg>
+              </a>
             </div>
           </div>
           <div className="overflow-hidden rounded-2xl border border-border shadow-[var(--shadow-warm)]">
@@ -236,6 +247,7 @@ function Home() {
           <div className="flex items-center gap-5">
             <a href={FB} target="_blank" rel="noreferrer" className="hover:text-primary">Facebook</a>
             <a href={IG} target="_blank" rel="noreferrer" className="hover:text-primary">Instagram</a>
+            <a href={TA} target="_blank" rel="noreferrer" className="hover:text-primary">TripAdvisor</a>
             <span>© {new Date().getFullYear()}</span>
           </div>
         </div>
