@@ -75,8 +75,8 @@ function Home() {
           <div className="relative">
             <div className="absolute -inset-4 -z-10 rounded-3xl" style={{ background: "var(--gradient-tricolore)", opacity: 0.15 }} />
             <img
-              src={heroPasta}
-              alt="Pâtes italiennes sans gluten à la tomate et basilic"
+              src={heroPasta.url}
+              alt="Assiette italienne sans gluten gourmande avec légumes, charcuterie, pois chiches et pain frais"
               width={1536}
               height={1024}
               className="rounded-2xl shadow-[var(--shadow-warm)] object-cover aspect-[4/3] w-full"
