@@ -247,6 +247,7 @@ function Home() {
           <div className="flex items-center gap-5">
             <a href={FB} target="_blank" rel="noreferrer" className="hover:text-primary">Facebook</a>
             <a href={IG} target="_blank" rel="noreferrer" className="hover:text-primary">Instagram</a>
+            <a href={TA} target="_blank" rel="noreferrer" className="hover:text-primary">TripAdvisor</a>
             <span>© {new Date().getFullYear()}</span>
           </div>
         </div>
