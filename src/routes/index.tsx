@@ -21,6 +21,7 @@ const IG = "https://www.instagram.com/manicarettibio/";
 const TA = "https://www.tripadvisor.fr/Restaurant_Review-g187147-d12433951-Reviews-Manicaretti-Paris_Ile_de_France.html";
 const TEL = "+33951775730";
 const MAPS = "https://maps.google.com/?q=60+Rue+de+Paradis,+75010+Paris";
+const DELICITY = "https://delicity.com/maincaretti-paris?rwg_token=AE37R_giMAzqt9zraeVXT2EFEHEzMibaDKHbPi321ya-vLVnOMZmCBJzJaRQgAAAUHuLh8RpWSbKxWe2OGDMn4HbM6pJsKJHJw%3D%3D";
 
 function Home() {
   return (
@@ -62,7 +63,7 @@ function Home() {
               Au cœur du 10e arrondissement, Manicaretti vous accueille pour une cuisine italienne authentique, entièrement sans gluten et issue de produits biologiques.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
-              <a href="#services" className="inline-flex items-center gap-2 rounded-full bg-[color:var(--italian-red)] px-6 py-3 text-sm font-semibold text-primary-foreground hover:opacity-90 transition">
+              <a href={DELICITY} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-full bg-[color:var(--italian-red)] px-6 py-3 text-sm font-semibold text-primary-foreground hover:opacity-90 transition">
                 <Bike className="h-4 w-4" /> Commander en livraison
               </a>
               <a href={MAPS} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-6 py-3 text-sm font-semibold hover:bg-muted transition">
