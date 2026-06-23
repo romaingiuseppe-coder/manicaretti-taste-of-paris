@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Facebook, Instagram, Phone, MapPin, Clock, UtensilsCrossed, Leaf, Bike, ShoppingBag, Dog } from "lucide-react";
-import heroPasta from "@/assets/hero-pasta.jpg";
+import heroPasta from "@/assets/hero-pasta.png.asset.json";
 import dishLasagna from "@/assets/dish-lasagna.jpg";
 import dishTiramisu from "@/assets/dish-tiramisu.jpg";
 import dishAntipasti from "@/assets/dish-antipasti.jpg";
