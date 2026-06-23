@@ -21,6 +21,7 @@ const IG = "https://www.instagram.com/manicarettibio/";
 const TA = "https://www.tripadvisor.fr/Restaurant_Review-g187147-d12433951-Reviews-Manicaretti-Paris_Ile_de_France.html";
 const TEL = "+33951775730";
 const MAPS = "https://maps.google.com/?q=60+Rue+de+Paradis,+75010+Paris";
+const DELICITY = "https://delicity.com/maincaretti-paris?rwg_token=AE37R_giMAzqt9zraeVXT2EFEHEzMibaDKHbPi321ya-vLVnOMZmCBJzJaRQgAAAUHuLh8RpWSbKxWe2OGDMn4HbM6pJsKJHJw%3D%3D";
 
 function Home() {
   return (
