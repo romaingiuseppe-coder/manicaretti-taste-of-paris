@@ -63,7 +63,7 @@ function Home() {
               Au cœur du 10e arrondissement, Manicaretti vous accueille pour une cuisine italienne authentique, entièrement sans gluten et issue de produits biologiques.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
-              <a href="#services" className="inline-flex items-center gap-2 rounded-full bg-[color:var(--italian-red)] px-6 py-3 text-sm font-semibold text-primary-foreground hover:opacity-90 transition">
+              <a href={DELICITY} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-full bg-[color:var(--italian-red)] px-6 py-3 text-sm font-semibold text-primary-foreground hover:opacity-90 transition">
                 <Bike className="h-4 w-4" /> Commander en livraison
               </a>
               <a href={MAPS} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-6 py-3 text-sm font-semibold hover:bg-muted transition">
