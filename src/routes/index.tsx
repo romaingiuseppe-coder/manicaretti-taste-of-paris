@@ -4,6 +4,7 @@ import heroPasta from "@/assets/hero-pasta.png.asset.json";
 import dishLasagna from "@/assets/dish-lasagna.jpg";
 import dishTiramisu from "@/assets/dish-tiramisu.jpg";
 import dishAntipasti from "@/assets/dish-antipasti.jpg";
+import tripadvisorIcon from "@/assets/tripadvisor-icon.png.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
