@@ -218,7 +218,7 @@ function Home() {
           <div className="overflow-hidden rounded-2xl border border-border shadow-[var(--shadow-warm)]">
             <iframe
               title="Manicaretti — 60 Rue de Paradis, 75010 Paris"
-              src="https://www.openstreetmap.org/export/embed.html?bbox=2.3504%2C48.8743%2C2.3564%2C48.8763&layer=mapnik&marker=48.87528%2C2.35340"
+              src="https://www.openstreetmap.org/export/embed.html?bbox=2.3466%2C48.8743%2C2.3526%2C48.8783&amp;layer=mapnik&amp;marker=48.87635%2C2.34965"
               className="h-full min-h-[420px] w-full"
               loading="lazy"
             />
