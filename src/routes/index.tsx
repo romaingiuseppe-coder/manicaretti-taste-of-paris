@@ -17,6 +17,7 @@ export const Route = createFileRoute("/")({
 
 const FB = "https://www.facebook.com/manicaretti.paris/?locale=fr_FR";
 const IG = "https://www.instagram.com/manicarettibio/";
+const TA = "https://www.tripadvisor.fr/Restaurant_Review-g187147-d12433951-Reviews-Manicaretti-Paris_Ile_de_France.html";
 const TEL = "+33951775730";
 const MAPS = "https://maps.google.com/?q=60+Rue+de+Paradis,+75010+Paris";
 
