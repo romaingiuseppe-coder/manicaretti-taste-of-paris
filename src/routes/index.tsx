@@ -144,7 +144,7 @@ function Home() {
             {[
               { icon: UtensilsCrossed, title: "Sur place", desc: "Salle chaleureuse, accueil convivial." },
               { icon: ShoppingBag, title: "À emporter", desc: "Commandez par téléphone, c'est prêt à l'heure." },
-              { icon: Bike, title: "Livraison", desc: "Disponible sur Uber Eats & Deliveroo." },
+              { icon: Bike, title: "Livraison", desc: "Disponible en livraison à domicile." },
               { icon: Dog, title: "Dog friendly", desc: "Vos compagnons à 4 pattes sont bienvenus." },
             ].map(({ icon: Icon, title, desc }) => (
               <div key={title} className="rounded-2xl bg-primary-foreground/10 p-6 backdrop-blur">
@@ -155,11 +155,8 @@ function Home() {
             ))}
           </div>
           <div className="mt-10 flex flex-wrap justify-center gap-3">
-            <a href="https://www.ubereats.com/fr/store-search?q=manicaretti" target="_blank" rel="noreferrer" className="rounded-full bg-primary-foreground px-6 py-3 text-sm font-semibold text-primary hover:opacity-90 transition">
-              Commander sur Uber Eats
-            </a>
-            <a href="https://deliveroo.fr/fr/search?query=manicaretti" target="_blank" rel="noreferrer" className="rounded-full bg-primary-foreground px-6 py-3 text-sm font-semibold text-primary hover:opacity-90 transition">
-              Commander sur Deliveroo
+            <a href={DELICITY} target="_blank" rel="noreferrer" className="rounded-full bg-primary-foreground px-6 py-3 text-sm font-semibold text-primary hover:opacity-90 transition">
+              Commander
             </a>
             <a href={`tel:${TEL}`} className="inline-flex items-center gap-2 rounded-full border border-primary-foreground/40 px-6 py-3 text-sm font-semibold hover:bg-primary-foreground/10 transition">
               <Phone className="h-4 w-4" /> 09 51 77 57 30
