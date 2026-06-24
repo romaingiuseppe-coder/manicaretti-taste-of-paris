@@ -45,9 +45,8 @@ function Home() {
           </a>
           <nav className="hidden md:flex items-center gap-7 text-sm font-medium">
             <a href="#histoire" className="hover:text-primary transition">L'histoire</a>
-            <a href="#carte" className="hover:text-primary transition">La carte</a>
-            <a href="#ateliers" className="hover:text-primary transition">Ateliers</a>
             <a href="#services" className="hover:text-primary transition">Services</a>
+            <a href="#ateliers" className="hover:text-primary transition">Ateliers</a>
             <a href="#contact" className="hover:text-primary transition">Contact</a>
           </nav>
           <a href={`tel:${TEL}`} className="inline-flex items-center gap-2 rounded-full bg-primary px-4 py-2 text-sm font-medium text-primary-foreground hover:bg-primary/90 transition">
