@@ -109,35 +109,6 @@ function Home() {
         </div>
       </section>
 
-      {/* Carte */}
-      <section id="carte" className="mx-auto max-w-6xl px-6 py-20">
-        <div className="flex flex-col items-center text-center">
-          <span className="text-xs uppercase tracking-[0.3em] text-[color:var(--italian-red)]">La carte</span>
-          <h2 className="mt-3 font-display text-4xl md:text-5xl font-bold">Quelques specialità</h2>
-          <p className="mt-4 max-w-xl text-muted-foreground">Une carte qui évolue au rythme des saisons et des arrivages bio.</p>
-        </div>
-        <div className="mt-12 grid gap-8 md:grid-cols-3">
-          {[
-            { img: dishAntipasti, name: "Antipasti", desc: "Planche de charcuterie italienne, olives, légumes grillés et pain sans gluten.", price: "12 €" },
-            { img: dishLasagna, name: "Lasagne al forno", desc: "Lasagnes maison à la bolognaise, mozzarella fondante, basilic frais.", price: "16 €" },
-            { img: dishTiramisu, name: "Tiramisù", desc: "Le classique revisité, mascarpone onctueux et biscuit sans gluten.", price: "7 €" },
-          ].map((d) => (
-            <article key={d.name} className="group overflow-hidden rounded-2xl border border-border bg-card transition hover:shadow-[var(--shadow-warm)]">
-              <div className="overflow-hidden">
-                <img src={d.img} alt={d.name} width={800} height={800} loading="lazy" className="aspect-square w-full object-cover transition duration-500 group-hover:scale-105" />
-              </div>
-              <div className="p-6">
-                <div className="flex items-baseline justify-between gap-3">
-                  <h3 className="font-display text-2xl font-semibold">{d.name}</h3>
-                  <span className="font-medium text-[color:var(--italian-red)]">{d.price}</span>
-                </div>
-                <p className="mt-2 text-sm text-muted-foreground">{d.desc}</p>
-              </div>
-            </article>
-          ))}
-        </div>
-      </section>
-
       {/* Ateliers */}
       <section id="ateliers" className="border-y border-border bg-[color:var(--italian-cream)]">
         <div className="mx-auto max-w-6xl px-6 py-20">
