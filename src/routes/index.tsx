@@ -158,10 +158,10 @@ function Home() {
           </div>
           <div className="mt-10 flex flex-wrap justify-center gap-3">
             <a href={WECANDOO} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-full bg-[color:var(--italian-red)] px-6 py-3 text-sm font-semibold text-primary-foreground hover:opacity-90 transition">
-              <ChefHat className="h-4 w-4" /> Ateliers Wecandoo
+              <ChefHat className="h-4 w-4" /> Ateliers sur Wecandoo
             </a>
             <a href={FUNBOOKER} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-6 py-3 text-sm font-semibold hover:bg-muted transition">
-              <ChefHat className="h-4 w-4" /> Ateliers Funbooker
+              <ChefHat className="h-4 w-4" /> Ateliers sur Funbooker
             </a>
           </div>
         </div>
@@ -205,7 +205,7 @@ function Home() {
         <div className="grid gap-10 md:grid-cols-2">
           <div>
             <span className="text-xs uppercase tracking-[0.3em] text-[color:var(--italian-red)]">Nous trouver</span>
-            <h2 className="mt-3 font-display text-4xl md:text-5xl font-bold">Venez nous voir</h2>
+            <h2 className="mt-3 font-display text-4xl md:text-5xl font-bold">Venez nous voir !</h2>
             <ul className="mt-8 space-y-5 text-base">
               <li className="flex items-start gap-3">
                 <MapPin className="mt-1 h-5 w-5 text-primary" />
