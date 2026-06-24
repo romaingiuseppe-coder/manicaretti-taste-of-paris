@@ -1,11 +1,14 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Facebook, Instagram, Phone, MapPin, Clock, UtensilsCrossed, Leaf, Bike, ShoppingBag, Dog } from "lucide-react";
+import { Facebook, Instagram, Phone, MapPin, Clock, UtensilsCrossed, Leaf, Bike, ShoppingBag, Dog, ChefHat } from "lucide-react";
 import heroPasta from "@/assets/hero-pasta.png.asset.json";
 import dishLasagna from "@/assets/dish-lasagna.jpg";
 import dishTiramisu from "@/assets/dish-tiramisu.jpg";
 import dishAntipasti from "@/assets/dish-antipasti.jpg";
 import tripadvisorIcon from "@/assets/tripadvisor-icon.png.asset.json";
 import manicarettiLogo from "@/assets/manicaretti-logo.jpg.asset.json";
+import atelier1 from "@/assets/atelier-1.jpg.asset.json";
+import atelier2 from "@/assets/atelier-2.jpg.asset.json";
+import atelier3 from "@/assets/atelier-3.jpg.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -23,6 +26,8 @@ const TA = "https://www.tripadvisor.fr/Restaurant_Review-g187147-d12433951-Revie
 const TEL = "+33951775730";
 const MAPS = "https://maps.google.com/?q=60+Rue+de+Paradis,+75010+Paris";
 const DELICITY = "https://delicity.com/maincaretti-paris?rwg_token=AE37R_giMAzqt9zraeVXT2EFEHEzMibaDKHbPi321ya-vLVnOMZmCBJzJaRQgAAAUHuLh8RpWSbKxWe2OGDMn4HbM6pJsKJHJw%3D%3D";
+const WECANDOO = "https://wecandoo.fr/artisan/paris-artisan-cuisinier-vittoria?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQPOTM2NjE5NzQzMzkyNDU5AAGnZ7KgE8AFwms9d6XsDmdpy4Pz8XL-wlVFBYqNyJDBNXM7HAn_O4q1OaUAzxs_aem_lTYdVSdAUZFXA9eEkgLHyw&utm_id=97760_v0_s00_e0_tv3";
+const FUNBOOKER = "https://www.funbooker.com/fr/annonce/atelier-de-cuisine-italienne-a-paris-10eme/voir?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQPOTM2NjE5NzQzMzkyNDU5AAGnMQPxQFN4_FBfhs4zV2VxsEcx-yGlzAtBDIgUdz9GNLFGOZLHHmaASYLVS0o_aem_zYtXHAOJSuDUyk7mkN7BBA";
 
 function Home() {
   return (
@@ -41,6 +46,7 @@ function Home() {
           <nav className="hidden md:flex items-center gap-7 text-sm font-medium">
             <a href="#histoire" className="hover:text-primary transition">L'histoire</a>
             <a href="#carte" className="hover:text-primary transition">La carte</a>
+            <a href="#ateliers" className="hover:text-primary transition">Ateliers</a>
             <a href="#services" className="hover:text-primary transition">Services</a>
             <a href="#contact" className="hover:text-primary transition">Contact</a>
           </nav>
@@ -132,6 +138,35 @@ function Home() {
           ))}
         </div>
       </section>
+
+      {/* Ateliers */}
+      <section id="ateliers" className="border-y border-border bg-[color:var(--italian-cream)]">
+        <div className="mx-auto max-w-6xl px-6 py-20">
+          <div className="flex flex-col items-center text-center">
+            <span className="text-xs uppercase tracking-[0.3em] text-primary">Ateliers</span>
+            <h2 className="mt-3 font-display text-4xl md:text-5xl font-bold">Mettez la main à la pâte</h2>
+            <p className="mt-4 max-w-xl text-muted-foreground">
+              Découvrez les secrets de la cuisine italienne sans gluten lors d'un atelier convivial avec Vittoria.
+            </p>
+          </div>
+          <div className="mt-12 grid gap-6 md:grid-cols-3">
+            {[atelier1, atelier2, atelier3].map((img, i) => (
+              <div key={i} className="overflow-hidden rounded-2xl border border-border bg-card shadow-[var(--shadow-warm)]">
+                <img src={img.url} alt={`Atelier de cuisine italienne Manicaretti ${i + 1}`} loading="lazy" className="aspect-[4/3] w-full object-cover" />
+              </div>
+            ))}
+          </div>
+          <div className="mt-10 flex flex-wrap justify-center gap-3">
+            <a href={WECANDOO} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-full bg-[color:var(--italian-red)] px-6 py-3 text-sm font-semibold text-primary-foreground hover:opacity-90 transition">
+              <ChefHat className="h-4 w-4" /> Ateliers Wecandoo
+            </a>
+            <a href={FUNBOOKER} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-6 py-3 text-sm font-semibold hover:bg-muted transition">
+              <ChefHat className="h-4 w-4" /> Ateliers Funbooker
+            </a>
+          </div>
+        </div>
+      </section>
+
 
       {/* Services */}
       <section id="services" className="bg-primary text-primary-foreground">
