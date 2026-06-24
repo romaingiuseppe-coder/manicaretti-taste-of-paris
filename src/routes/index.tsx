@@ -5,6 +5,7 @@ import dishLasagna from "@/assets/dish-lasagna.jpg";
 import dishTiramisu from "@/assets/dish-tiramisu.jpg";
 import dishAntipasti from "@/assets/dish-antipasti.jpg";
 import tripadvisorIcon from "@/assets/tripadvisor-icon.png.asset.json";
+import manicarettiLogo from "@/assets/manicaretti-logo.jpg.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -32,7 +33,8 @@ function Home() {
       {/* Nav */}
       <header className="sticky top-0 z-40 bg-background/85 backdrop-blur border-b border-border">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-          <a href="#top" className="flex items-baseline gap-2">
+          <a href="#top" className="flex items-center gap-3">
+            <img src={manicarettiLogo.url} alt="Logo Manicaretti" className="h-10 w-10 rounded-full object-cover border border-border bg-white" />
             <span className="font-display text-2xl font-bold tracking-tight">Manicaretti</span>
             <span className="hidden sm:inline text-xs uppercase tracking-[0.2em] text-muted-foreground">cucina e ateliers</span>
           </a>
@@ -234,10 +236,11 @@ function Home() {
 
       {/* Footer */}
       <footer className="border-t border-border bg-[color:var(--italian-cream)]">
-        <div className="mx-auto max-w-6xl px-6 py-10 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-muted-foreground">
-          <div>
+        <div className="mx-auto max-w-6xl px-6 py-10 flex flex-col items-center justify-center gap-4 text-sm text-muted-foreground text-center">
+          <div className="flex items-center justify-center gap-3">
+            <img src={manicarettiLogo.url} alt="Logo Manicaretti" className="h-10 w-10 rounded-full object-cover border border-border bg-white" />
             <span className="font-display text-lg font-semibold text-foreground">Manicaretti</span>
-            <span className="ml-2">· cucina e ateliers · prodotti biologici</span>
+            <span>· cucina e ateliers · prodotti biologici</span>
           </div>
           <div className="flex items-center gap-5">
             <a href={FB} target="_blank" rel="noreferrer" className="hover:text-primary">Facebook</a>
