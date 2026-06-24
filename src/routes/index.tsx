@@ -158,10 +158,10 @@ function Home() {
           </div>
           <div className="mt-10 flex flex-wrap justify-center gap-3">
             <a href={WECANDOO} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-full bg-[color:var(--italian-red)] px-6 py-3 text-sm font-semibold text-primary-foreground hover:opacity-90 transition">
-              <ChefHat className="h-4 w-4" /> Ateliers Wecandoo
+              <ChefHat className="h-4 w-4" /> Ateliers sur Wecandoo
             </a>
             <a href={FUNBOOKER} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-6 py-3 text-sm font-semibold hover:bg-muted transition">
-              <ChefHat className="h-4 w-4" /> Ateliers Funbooker
+              <ChefHat className="h-4 w-4" /> Ateliers sur Funbooker
             </a>
           </div>
         </div>
