@@ -205,7 +205,7 @@ function Home() {
         <div className="grid gap-10 md:grid-cols-2">
           <div>
             <span className="text-xs uppercase tracking-[0.3em] text-[color:var(--italian-red)]">Nous trouver</span>
-            <h2 className="mt-3 font-display text-4xl md:text-5xl font-bold">Venez nous voir</h2>
+            <h2 className="mt-3 font-display text-4xl md:text-5xl font-bold">Venez nous voir !</h2>
             <ul className="mt-8 space-y-5 text-base">
               <li className="flex items-start gap-3">
                 <MapPin className="mt-1 h-5 w-5 text-primary" />
