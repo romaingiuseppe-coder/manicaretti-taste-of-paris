@@ -139,6 +139,35 @@ function Home() {
         </div>
       </section>
 
+      {/* Ateliers */}
+      <section id="ateliers" className="border-y border-border bg-[color:var(--italian-cream)]">
+        <div className="mx-auto max-w-6xl px-6 py-20">
+          <div className="flex flex-col items-center text-center">
+            <span className="text-xs uppercase tracking-[0.3em] text-primary">Ateliers</span>
+            <h2 className="mt-3 font-display text-4xl md:text-5xl font-bold">Mettez la main à la pâte</h2>
+            <p className="mt-4 max-w-xl text-muted-foreground">
+              Découvrez les secrets de la cuisine italienne sans gluten lors d'un atelier convivial avec Vittoria.
+            </p>
+          </div>
+          <div className="mt-12 grid gap-6 md:grid-cols-3">
+            {[atelier1, atelier2, atelier3].map((img, i) => (
+              <div key={i} className="overflow-hidden rounded-2xl border border-border bg-card shadow-[var(--shadow-warm)]">
+                <img src={img.url} alt={`Atelier de cuisine italienne Manicaretti ${i + 1}`} loading="lazy" className="aspect-[4/3] w-full object-cover" />
+              </div>
+            ))}
+          </div>
+          <div className="mt-10 flex flex-wrap justify-center gap-3">
+            <a href={WECANDOO} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-full bg-[color:var(--italian-red)] px-6 py-3 text-sm font-semibold text-primary-foreground hover:opacity-90 transition">
+              <ChefHat className="h-4 w-4" /> Ateliers Wecandoo
+            </a>
+            <a href={FUNBOOKER} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-6 py-3 text-sm font-semibold hover:bg-muted transition">
+              <ChefHat className="h-4 w-4" /> Ateliers Funbooker
+            </a>
+          </div>
+        </div>
+      </section>
+
+
       {/* Services */}
       <section id="services" className="bg-primary text-primary-foreground">
         <div className="mx-auto max-w-6xl px-6 py-20">
