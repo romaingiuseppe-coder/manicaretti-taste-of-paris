@@ -215,21 +215,21 @@ function Home() {
               </li>
             </ul>
             <div className="mt-8 grid w-full grid-cols-1 gap-3 md:grid-cols-3">
-              <Button asChild className="h-14 w-full gap-2 px-3 text-base font-semibold [&_svg]:size-5">
+              <Button asChild variant="facebook" className="h-11 w-full gap-1.5 rounded-2xl px-2 py-1.5 text-base font-semibold [&_svg]:size-5">
                 <a href={FB} target="_blank" rel="noreferrer">
                   <Facebook aria-hidden="true" />
                   Facebook
                 </a>
               </Button>
-              <Button asChild className="h-14 w-full gap-2 bg-italian-red px-3 text-base font-semibold hover:bg-italian-red/90 [&_svg]:size-5">
+              <Button asChild variant="instagram" className="h-11 w-full gap-1.5 rounded-2xl px-2 py-1.5 text-base font-semibold [&_svg]:size-5">
                 <a href={IG} target="_blank" rel="noreferrer">
                   <Instagram aria-hidden="true" />
                   Instagram
                 </a>
               </Button>
-              <Button asChild variant="outline" className="h-14 w-full gap-2 border-primary px-3 text-base font-semibold text-primary hover:bg-muted hover:text-primary">
+              <Button asChild variant="tripadvisor" className="h-11 w-full gap-1.5 rounded-2xl px-2 py-1.5 text-base font-semibold">
                 <a href={TA} target="_blank" rel="noreferrer">
-                  <img src={tripadvisorIcon.url} alt="" className="h-5 w-5 shrink-0 object-contain" />
+                  <img src={tripadvisorIcon.url} alt="" className="social-tripadvisor-icon h-5 w-5 shrink-0 object-contain" />
                   TripAdvisor
                 </a>
               </Button>
