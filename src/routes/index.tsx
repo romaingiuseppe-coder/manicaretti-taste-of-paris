@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Button } from "@/components/ui/button";
 import { Facebook, Instagram, Phone, MapPin, Clock, UtensilsCrossed, Leaf, Bike, ShoppingBag, Dog, ChefHat } from "lucide-react";
 import heroPasta from "@/assets/hero-pasta.png.asset.json";
 import tripadvisorIcon from "@/assets/tripadvisor-icon.png.asset.json";
@@ -12,6 +13,10 @@ export const Route = createFileRoute("/")({
     meta: [
       { title: "Manicaretti — Restaurant italien sans gluten · Paris 10e" },
       { name: "description", content: "Cuisine italienne 100% sans gluten et bio au 60 Rue de Paradis, Paris 10e. Sur place, à emporter ou en livraison." },
+      { property: "og:title", content: "Manicaretti — Restaurant italien sans gluten · Paris 10e" },
+      { property: "og:description", content: "Cuisine italienne 100% sans gluten et bio au 60 Rue de Paradis, Paris 10e. Sur place, à emporter ou en livraison." },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
   }),
   component: Home,
@@ -209,16 +214,25 @@ function Home() {
                 </div>
               </li>
             </ul>
-            <div className="mt-8 flex gap-3">
-              <a href={FB} target="_blank" rel="noreferrer" aria-label="Facebook" className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-border hover:bg-muted transition">
-                <Facebook className="h-5 w-5" />
-              </a>
-              <a href={IG} target="_blank" rel="noreferrer" aria-label="Instagram" className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-border hover:bg-muted transition">
-                <Instagram className="h-5 w-5" />
-              </a>
-              <a href={TA} target="_blank" rel="noreferrer" aria-label="TripAdvisor" className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-border hover:bg-muted transition text-muted-foreground hover:text-foreground p-2">
-                <img src={tripadvisorIcon.url} alt="TripAdvisor" className="h-5 w-5 object-contain" />
-              </a>
+            <div className="mt-8 grid w-full grid-cols-1 gap-3 md:grid-cols-3">
+              <Button asChild className="h-14 w-full gap-2 px-3 text-base font-semibold [&_svg]:size-5">
+                <a href={FB} target="_blank" rel="noreferrer">
+                  <Facebook aria-hidden="true" />
+                  Facebook
+                </a>
+              </Button>
+              <Button asChild className="h-14 w-full gap-2 bg-italian-red px-3 text-base font-semibold hover:bg-italian-red/90 [&_svg]:size-5">
+                <a href={IG} target="_blank" rel="noreferrer">
+                  <Instagram aria-hidden="true" />
+                  Instagram
+                </a>
+              </Button>
+              <Button asChild variant="outline" className="h-14 w-full gap-2 border-primary px-3 text-base font-semibold text-primary hover:bg-muted hover:text-primary">
+                <a href={TA} target="_blank" rel="noreferrer">
+                  <img src={tripadvisorIcon.url} alt="" className="h-5 w-5 shrink-0 object-contain" />
+                  TripAdvisor
+                </a>
+              </Button>
             </div>
           </div>
           <div className="overflow-hidden rounded-2xl border border-border shadow-[var(--shadow-warm)]">

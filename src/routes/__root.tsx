@@ -74,8 +74,6 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "Manicaretti — Restaurant italien sans gluten · Paris 10e" },
       { name: "twitter:description", content: "Manicaretti, cucina e ateliers. Restaurant italien 100% sans gluten, produits biologiques, au cœur de Paris 10e. À emporter et livraison." },
-      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/TjpwxDd1SWgBTFfLq3MblJFNQ6C3/social-images/social-1782212799708-302491262_495212922611794_3104380195913303777_n.webp" },
-      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/TjpwxDd1SWgBTFfLq3MblJFNQ6C3/social-images/social-1782212799708-302491262_495212922611794_3104380195913303777_n.webp" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
