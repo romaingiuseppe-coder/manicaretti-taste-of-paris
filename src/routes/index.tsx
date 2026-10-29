@@ -17,6 +17,10 @@ export const Route = createFileRoute("/")({
       { property: "og:description", content: "Cuisine italienne 100% sans gluten et bio au 60 Rue de Paradis, Paris 10e. Sur place, à emporter ou en livraison." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      ...(heroPasta.url.startsWith("https://") ? [
+        { property: "og:image", content: heroPasta.url },
+        { name: "twitter:image", content: heroPasta.url },
+      ] : []),
     ],
   }),
   component: Home,
