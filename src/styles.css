@@ -33,10 +33,21 @@
   --color-italian-green: var(--italian-green);
   --color-italian-red: var(--italian-red);
   --color-italian-cream: var(--italian-cream);
+  --color-social-facebook: var(--social-facebook);
+  --color-social-instagram: var(--social-instagram);
+  --color-social-tripadvisor: var(--social-tripadvisor);
+  --color-social-light: var(--social-light);
+  --color-social-dark: var(--social-dark);
 }
 
 :root {
   --radius: 0.5rem;
+  --social-facebook: #1877F2;
+  --social-instagram: #C13584;
+  --social-tripadvisor: #34E0A1;
+  --social-light: #FFFFFF;
+  --social-dark: #000000;
+  --gradient-instagram: linear-gradient(115deg, #833AB4 0%, #C13584 40%, #E1306C 65%, #F77737 100%);
   /* Italian palette: warm cream, deep green, vibrant red */
   --background: oklch(0.985 0.012 85);
   --foreground: oklch(0.22 0.03 50);
@@ -76,4 +87,9 @@
     font-family: var(--font-sans);
   }
   h1, h2, h3, h4 { font-family: var(--font-display); letter-spacing: -0.01em; }
+}
+
+.social-tripadvisor-icon {
+  filter: grayscale(1) contrast(10);
+  mix-blend-mode: multiply;
 }
