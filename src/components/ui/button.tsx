@@ -16,9 +16,12 @@ const buttonVariants = cva(
         secondary: "bg-secondary text-secondary-foreground shadow-sm hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
-        facebook: "bg-social-facebook text-social-light hover:bg-social-facebook hover:opacity-90",
-        instagram: "bg-social-instagram bg-[image:var(--gradient-instagram)] text-social-light hover:opacity-90",
-        tripadvisor: "bg-social-tripadvisor text-social-dark hover:bg-social-tripadvisor hover:opacity-90",
+        facebook:
+          "border-2 border-social-facebook bg-background text-social-facebook hover:bg-social-facebook/10",
+        instagram:
+          "border-2 border-social-instagram bg-background text-social-instagram hover:bg-social-instagram/10",
+        tripadvisor:
+          "border-2 border-social-tripadvisor bg-background text-foreground hover:bg-social-tripadvisor/15",
       },
       size: {
         default: "h-9 px-4 py-2",
