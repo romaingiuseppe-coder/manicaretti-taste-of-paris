@@ -10,3 +10,6 @@
 <!-- LOVABLE:END -->
 
 - Define social brand colors in global semantic tokens and expose them through Button variants so Contact controls share the design-system styling boundary.
+- Keep GitHub Pages export conditional on GITHUB_PAGES=true; normal Lovable builds retain their server configuration and root base path.
+- Export Lovable asset pointers as bundled originals only during the Pages build so static hosting does not depend on a runtime asset proxy.
+- Explicitly enumerate public static routes for Pages prerendering and verify their exported links; GitHub Pages has no application server.
